@@ -1,7 +1,7 @@
 # Dynatrace Service Broker
 [![Build Status](https://travis-ci.org/nebhale/new-relic-service-broker.svg?branch=master)](https://travis-ci.org/nebhale/new-relic-service-broker)
 
-This project is a self-hostable application that provides a service broker that proxies New Relic credentials to applications.  This is typically useful for on-premise deployments of Cloud Foundry that wish to easily bind to an off-premise New Relic deployment.  In order to facilitate self-hosting, the application is designed to work in [Cloud Foundry][p].
+This project is a self-hostable application that provides a service broker that proxies DynaTrace credentials to applications.  This is typically useful for on-premise deployments of Cloud Foundry that wish to easily bind to an off-premise DynaTrace deployment.  In order to facilitate self-hosting, the application is designed to work in [Cloud Foundry][p].
 
 ## Requirements
 
@@ -19,15 +19,13 @@ $ cf push
 ```
 
 ### Environment Variables
-Since the application is designed to work in a PaaS environment, all configuration is done with environment variables.  The `LICENSE_KEY` value is the only one that is provided by New Relic.  All others are unique to a deployment.
+Since the application is designed to work in a PaaS environment, all configuration is done with environment variables.  The `server` and `profile` value is the only one that is provided by Dynatrace.  All others are unique to a deployment.
 
 | Key | Description
 | --- | -----------
-| `LICENSEKEY` | The New Relic account license key to provide to all applications.  This can be found on the Account Settings Summary page in New Relic.
-| `SECURITY_USER_NAME` | The username that the Cloud Foundry Cloud Controller should use to authenticate.  This can be any value.
-| `SECURITY_USER_PASSWORD` | The password that the Cloud Foundry Cloud Controller should use to authenticate.  This can be any value
-| `SERVICEBROKER_PLANID` | The id for the plan advertised by the service broker.  This **must** be a UUID.  A new UUID can be generated [here][u].
-| `SERVICEBROKER_SERVICEID` | the id of the service advertised by the service broker.  This **must** be a UUID.  A new UUID can be generated [here][u].
+| `server` | The Dynatrace server ip with portnumber to provide to all applications.  
+| `profile` | The profile that can used for mentioning agent-name during setting java agent path.  This can be any value.
+
 
 ## Developing
 The project is set up as a Maven project and doesn't have any special requirements beyond that.
