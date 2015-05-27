@@ -3,4 +3,5 @@
 .idea/workspace.xml
 .settings
 .project
+.classpath
 target
