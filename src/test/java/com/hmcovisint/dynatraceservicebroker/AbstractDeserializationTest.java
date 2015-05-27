@@ -28,6 +28,7 @@ public abstract class AbstractDeserializationTest<T> {
 
     private final Class<T> type;
 
+    
     protected AbstractDeserializationTest(Class<T> type) {
         this.type = type;
     }

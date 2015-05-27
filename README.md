@@ -1,5 +1,5 @@
 # Dynatrace Service Broker
-[![Build Status](https://travis-ci.org/nebhale/new-relic-service-broker.svg?branch=master)](https://travis-ci.org/nebhale/new-relic-service-broker)
+[![Build Status](https://api.travis-ci.org/happiestminds-covisint/dynatrace-service-broker.svg?branch=master)](https://api.travis-ci.org/happiestminds-covisint/dynatrace-service-broker.svg)
 
 This project is a self-hostable application that provides a service broker that proxies DynaTrace credentials to applications.  This is typically useful for on-premise deployments of Cloud Foundry that wish to easily bind to an off-premise DynaTrace deployment.  In order to facilitate self-hosting, the application is designed to work in [Cloud Foundry][p].
 

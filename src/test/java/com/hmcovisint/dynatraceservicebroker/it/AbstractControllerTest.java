@@ -36,7 +36,8 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
 @WebAppConfiguration
 public abstract class AbstractControllerTest {
 
-    @Autowired
+
+	@Autowired
     protected volatile ObjectMapper objectMapper;
 
     protected volatile MockMvc mockMvc;
