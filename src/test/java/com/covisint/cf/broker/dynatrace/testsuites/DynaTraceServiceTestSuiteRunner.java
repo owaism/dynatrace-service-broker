@@ -1,4 +1,4 @@
-package com.covisint.cf.broker.dynatrace.testsuit;
+package com.covisint.cf.broker.dynatrace.testsuites;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

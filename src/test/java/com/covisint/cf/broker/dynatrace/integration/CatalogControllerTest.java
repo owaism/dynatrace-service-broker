@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.covisint.cf.broker.dynatrace.catalog.it;
+package com.covisint.cf.broker.dynatrace.integration;
 
-import com.covisint.cf.broker.dynatrace.it.AbstractControllerTest;
+import com.covisint.cf.broker.dynatrace.integration.AbstractControllerTest;
 
 import org.junit.Test;
 

@@ -16,15 +16,14 @@
 
 package com.covisint.cf.broker.dynatrace.binding;
 
-import com.covisint.cf.broker.dynatrace.AbstractSerializationTest;
-import com.covisint.cf.broker.dynatrace.Credentials;
-import com.covisint.cf.broker.dynatrace.binding.BindingResponse;
+import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
 import java.net.URI;
 import java.util.Map;
 
-import static org.junit.Assert.assertEquals;
+import com.covisint.cf.broker.dynatrace.AbstractSerializationTest;
+import com.covisint.cf.broker.dynatrace.Credentials;
 
 public final class BindingResponseTest extends AbstractSerializationTest<BindingResponse> {
 

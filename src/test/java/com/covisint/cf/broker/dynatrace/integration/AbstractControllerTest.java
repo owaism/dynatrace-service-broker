@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.covisint.cf.broker.dynatrace.it;
+package com.covisint.cf.broker.dynatrace.integration;
 
 import com.covisint.cf.broker.dynatrace.Application;
 import com.fasterxml.jackson.databind.ObjectMapper;
